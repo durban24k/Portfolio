@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Wanjau || Resume Timeline</title>
+    <link rel="icon" href="./images/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background:black;
+        }
+        body h1 {
+            padding-top:20px;
+            text-align: center;
+            font-size: 60px;
+            color:whitesmoke;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            padding: 40px 0;
+            width: 1000px;
+            box-sizing: border-box;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #c5c5c5;
+        }
+
+        .timeline ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline ul li {
+            line-height: normal;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .timeline ul li:nth-child(odd) {
+            float: left;
+            text-align: right;
+            clear: both;
+        }
+
+        .timeline ul li:nth-child(even) {
+            float: right;
+            text-align: left;
+            clear: both;
+        }
+
+        .timeline ul li:nth-child(odd):before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: -6px;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(255,255,255,.2);
+        }
+
+        .timeline ul li:nth-child(even):before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: -4px;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(255,255,255,.2);
+        }
+
+        .content {
+            padding-bottom: 20px;
+        }
+
+        .timeline ul li h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            color: whitesmoke;
+        }
+
+        .timeline ul li p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        .timeline ul li .content{
+            color:rgba(255, 255, 255, 1);
+        }
+        .timeline ul li .content #para{
+            font-size:14px;
+        }
+        .timeline ul li .time h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+
+        }
+
+        .timeline ul li:nth-child(odd) .time {
+            position: absolute;
+            top: 10px;
+            right: -166px;
+            margin: 0;
+            padding: 8px 16px;
+            background: whitesmoke;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 0 0 3px rgba(255,255,255,.2);
+        }
+
+        .timeline ul li:nth-child(even) .time {
+            position: absolute;
+            top: 10px;
+            left: -166px;
+            margin: 0;
+            padding: 8px 16px;
+            background: whitesmoke;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, .2);
+        }
+
+        @media (max-width:1000px) {
+            .timeline {
+                width: 100%;
+            }
+        }
+
+        @media (max-width:767px) {
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                padding: 0 20px;
+            }
+
+            .timeline {
+                width: 100%;
+                padding-bottom: 0;
+            }
+
+            .timeline:before {
+                left: 20px;
+            }
+
+            .timeline ul li {
+                padding: 60px 40px;
+            }
+
+            .timeline ul li:nth-child(even),
+            .timeline ul li:nth-child(odd) {
+                width: 100%;
+                text-align: left;
+                padding-left: 50px;
+                padding-bottom: 50px;
+            }
+
+            .timeline ul li:nth-child(even):before,
+            .timeline ul li:nth-child(odd):before {
+                top: 10px;
+                left: 16px;
+            }
+
+            .timeline ul li:nth-child(even) .time,
+            .timeline ul li:nth-child(odd) .time {
+                top: 0px;
+                left: 50px;
+                right: inherit;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resume Timeline</h1>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                    <h3>IoT - WATER QUALITY MONITORING - NAIROBI RIVER</h3>
+                    <p>
+                        <div id="para">LEAD DEVELOPER - Smart Monitoring of Water Quality for Urban Irrigation and Domestic Supply by Exploiting IoT in Nairobi River. As part of the student team involved in development, testing and installation of the Project.
+                            Working together with Prof. Stanley Githinji - USIU-Africa. <a href="https://www.kenet.or.ke/content/four-researchers-bag-computer-science-information-systems-and-engineering-multi-disciplinary" style="color:#fff;font-weight:bold;">CLICK HERE</a> to read about the Grant.
+                        </div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>Sept. 2020</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>AI & MACHINE LEARNING</h3>
+                    <p>
+                        <div id="para">With the interest of enhancing data-driven solutions. I started to incorporate AI - Data Science and Machine Learning in the problems I solve to create solutions that are backed up by accurate and up-to-date data.</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>August 2020</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>BLOCKCHAIN & DECENTRALIZED APPS</h3>
+                    <p>
+                        <div id="para">I curiously started to look into the Blockchain and Decentralized applications. I found myself signing up for online classes and video tutorials on the same. I believe Decentralized applications are the future.</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>June 2020</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>SMEs IMPACTED BY COVID-19</h3>
+                    <p>
+                        <div id="para">Helping in a USIU-Africa volunteer program to help Small and Micro Enterprises affected by COVID-19 transition into the online platforms. Creating websites and web applications for those businesses.</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>May 2020</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>WQMS IOT PROJECT</h3>
+                    <p>
+                        <div id="para">Working on a remote Water Quality Monitoring System (rWQMS) IOT Project. This is just a proof of concept project. I used Arduino Uno, pH Meter, Conductivity Sensor and Turbidity Sensor to measure the pH, conductivity and clearness of water.</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>February 2020</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>NODEJS/EXPRESS </h3>
+                    <p>
+                        <div id="para">Right after my birthday, I transitioned from Web Design to Web Development with a particular interest to the backend in Javascript. I collaborated with to construct a realtime poll application using NodeJS and Express framework.
+                        </div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>December 2019</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>UI/UX DESIGN</h3>
+                    <p>
+                        <div id="para">Intrigued by the responsiveness in websites and mobile applications, I began my journey in User Interface and User Experience Design with Adobe XD and Photoshop</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>May 2019</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>RESEARCH ASSISTANT, USIU-A</h3>
+                    <p>
+                        <div id="para">Collection of data in the field in the USIU Research Office, in colloboration with Retirement Benefits Authority (RBA).</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>April 2019</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>USIU-AFRICA</h3>
+                    <p>
+                        <div id="para">I joined USIU-Africa, September 2017. BSc Applied Computer Technology.</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>September 2017</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>JKUAT-JUJA</h3>
+                    <p>
+                        <div id="para">I joined Jomo Kenyatta University of Agriculture and Technology. BSc. Analytical Chemistry</div>
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>September 2012</h4>
+                </div>
+            </li>
+            <div style="clear:both;"></div>
+        </ul>
+    </div>
+    <!-- End Hire Sectio  -->
+    <!-- Footer -->
+    <footer id="footer" class="footer container" style="background:whitesmoke;">
+        <div class="footer-contact">
+            <h1 class="footer-contact-heading" style="color:black;">Get In Touch</h1>
+            <p class="footer-contact-info" style="color:black;">Email: info@amwanjau.com</p>
+            <p class="footer-contact-info" style="color:black;">Mobile: +254 726 006563</p>
+        </div>
+        <div class="footer-social-follow">
+            <h1 class="footer-social-follow-heading" style="font-size:20px;color:black;">Follow Me</h1><br>
+            <div class="footer-social-icon">
+                <a href="https://www.github.com/durban24k"><i class="fab fa-github" style="color:black;"></i></a>
+                <a href="https://www.instagram.com/the.alfredwanjau.dev/"><i class="fab fa-instagram-square" style="color:black;"></i></a>
+                <a href="https://twitter.com/wanjaualfred?s=09"><i class="fab fa-twitter" style="color:black;"></i></a>
+                <a href="https://www.linkedin.com/in/alfred-wanjau-262b508a/" style="color:black;"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

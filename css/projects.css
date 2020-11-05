@@ -1,0 +1,125 @@
+.portfolios {
+    min-height: 100vh;
+    width: 100%;
+    padding:10rem 5rem;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolios .portfolios-header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.portfolios .portfolios-header .portfolios-header-heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+.portfolios .portfolios-info{
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    flex-direction:column;
+}
+.portfolios .portfolios-info .portfolio{
+    width:100%;
+    min-height:300px;
+    position:relative;
+    transition:.5s ease transform;
+    margin:5px;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .5s ease transform;
+    display: block;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    color: black;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    color: whitesmoke;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back{
+    transform:rotateY(180deg);
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back .portfolio-back-button{
+    padding: 1rem 1.7rem;
+    display: inline-block;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    margin-top: 10px;
+    color: black;
+    text-transform:uppercase;
+
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back i,
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-front i{
+    font-size:4.5rem;
+    margin-bottom:10px;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back i{
+    color:whitesmoke;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-front i{
+    color:black;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back .portfolio-back-heading,
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-front .portfolio-front-heading{
+    font-size:2.5rem;
+    text-transform:capitalize;
+}
+.portfolios .portfolios-info .portfolio .portfolio-card .portfolio-back .portfolio-back-button:hover {
+    background-color: rgb(165, 164, 164);
+}
+.portfolios .portfolios-info .portfolio:hover .portfolio-card{
+    transform: rotateY(180deg);
+}
+
+@media only screen and (min-width:768px){
+    .portfolios .portfolios-info{
+        flex-direction:row;
+        width:90%;
+    }
+    .portfolios .portfolios-info .portfolio{
+        margin:0 auto;
+    }
+}
