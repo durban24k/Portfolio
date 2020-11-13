@@ -563,37 +563,37 @@ html {
 /* End Media Query for Desktop Only */
 
 /* Exclusive Product */
-.product-banner {
+.hire .product-banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 60rem;
     background-color: #8f8f91;
-  }
-  
-  .product-banner .left img {
+}
+
+.hire .product-banner .left img {
     object-fit: fill;
     height: 100%;
     width:100%;
     filter: grayscale(100%);
-  }
-  
-  .product-banner .right {
+}
+
+.hire .product-banner .right {
     align-self: center;
     text-align: center;
     padding: 4rem;
-  }
-  
-  .product-banner .content h3 {
+}
+
+.hire .product-banner .content h3 {
     color: #000000;
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem;
-  }
-  
-  .product-banner .content .discount {
+}
+
+.hire .product-banner .content .discount {
     color: #ffffff;
-  }
-  .product-banner .content a{
+}
+.hire .product-banner .content a{
     padding: 1.6rem 2.6rem;
     display: inline-block;
     text-decoration: none;
@@ -604,41 +604,41 @@ html {
     letter-spacing: .2rem;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  
-  .product-banner .content h2 span {
+}
+
+.hire .product-banner .content h2 span {
     color: #fff;
     font-size: 5rem;
     font-weight: 500;
     display: block;
     line-height: 1;
     text-transform:uppercase;
-  }
-  
-  @media only screen and (max-width: 996px) {
-    .product-banner .content h1 span {
-      font-size: 5rem;
+}
+
+@media only screen and (max-width: 996px) {
+    .hire .product-banner .content h1 span {
+        font-size: 5rem;
     }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .product-banner {
-      grid-template-columns: 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+    .hire .product-banner {
+        grid-template-columns: 1fr;
     }
-  
-    .product-banner .left {
-      display: none;
+
+    .hire .product-banner .left {
+        display: none;
     }
-  
-    .product-banner .content h2 span {
-      font-size: 4rem;
+
+    .hire .product-banner .content h2 span {
+        font-size: 4rem;
     }
-  
-    .product-banner .content h3 {
-      font-size: 2rem;
+
+    .hire .product-banner .content h3 {
+        font-size: 2rem;
     }
-  
-    .product-banner .content a {
-      padding: 1rem 3rem;
+
+    .hire .product-banner .content a {
+        padding: 1rem 3rem;
     }
-  }
+}
