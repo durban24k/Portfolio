@@ -353,6 +353,7 @@ html {
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
+    text-align:center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,35 +422,8 @@ html {
 /* End Services */
 
 /* Hire */
-.hire {
-    min-height: 10vh;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(185, 185, 185, 0.534);
-    padding: 3rem 2rem;
-}
-
-.hire .hire-heading {
-    color: rgba(0, 0, 0, 1);
-    font-size: 2.2rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.hire .hire-button {
-    padding: 2rem 3rem;
-    display: inline-block;
-    background-color: black;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .2rem;
-    margin-top: 10px;
-    color: whitesmoke;
-}
-
-.hire .hire-button:hover {
-    background-color: rgb(165, 164, 164);
+.hire{
+    height:auto;
 }
 
 /* End Hire */
@@ -587,3 +561,84 @@ html {
 }
 
 /* End Media Query for Desktop Only */
+
+/* Exclusive Product */
+.product-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60rem;
+    background-color: #8f8f91;
+  }
+  
+  .product-banner .left img {
+    object-fit: fill;
+    height: 100%;
+    width:100%;
+    filter: grayscale(100%);
+  }
+  
+  .product-banner .right {
+    align-self: center;
+    text-align: center;
+    padding: 4rem;
+  }
+  
+  .product-banner .content h3 {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .product-banner .content .discount {
+    color: #ffffff;
+  }
+  .product-banner .content a{
+    padding: 1.6rem 2.6rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-banner .content h2 span {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+    text-transform:uppercase;
+  }
+  
+  @media only screen and (max-width: 996px) {
+    .product-banner .content h1 span {
+      font-size: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .product-banner {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-banner .left {
+      display: none;
+    }
+  
+    .product-banner .content h2 span {
+      font-size: 4rem;
+    }
+  
+    .product-banner .content h3 {
+      font-size: 2rem;
+    }
+  
+    .product-banner .content a {
+      padding: 1rem 3rem;
+    }
+  }
